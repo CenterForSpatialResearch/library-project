@@ -1,0 +1,214 @@
+<html>
+<head>
+<style>
+#circle1
+{
+border-radius: 100% 100% 100% 100%;
+width: 25%;
+/*height: 348.5;*/
+margin-top: 2%;
+/*margin-right: 8%;*/
+opacity:.5;
+z-index:1;
+position:relative;
+}
+#circle2
+{
+border-radius: 100% 100% 100% 100%;
+width:29%;
+/*width: 399.5;*/
+/*height: 348.5;*/
+margin-top: 2%;
+/*margin-left: 8%;*/
+opacity:1;
+z-index:1;
+position:relative;
+}
+#circle2:hover{
+  opacity:.3;
+}
+#circle1:hover{
+  opacity:.1;
+}
+
+body {
+
+  font-family: "Gotham-Light", sans-serif;
+    font-weight:100;
+   height: 100%;
+    overflow: auto;
+    /*letter-spacing: 1pt;*/
+    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;  
+  background-color: white;
+  color: rgba(65, 63, 63, 1);
+}
+@font-face {
+    font-family: 'Gotham-Light';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Gotham-Light'), local('Gotham-Light'), url(Gotham-Light.otf) format('truetype');
+}
+@font-face {
+    font-family: 'AkzidenzGrotesk-Light';
+    font-style: normal;
+    /*font-weight: 100;*/
+    src: local('AkzidenzGrotesk-Light'), local('AkzidenzGrotesk-Light'), url(AkzidenzGrotesk-Light.otf) format('truetype');
+}
+.introTitle{
+    /*text-align: center;*/
+    font-size:18pt;
+line-height: 21px;
+width: 450px;
+letter-spacing: 1pt;
+text-align: left;
+margin-top: -14%;
+
+}
+.intro{
+/*line-height: 21px;
+width: 450px;
+letter-spacing: 1pt;
+text-align: left;
+margin-top: -12%;
+background-color: rgb(248, 248, 248);
+padding: 67px;
+z-index: 0;
+*/
+line-height: 21px;
+width: 600px;
+letter-spacing: 1pt;
+text-align: left;
+margin-top: 65px;
+background-color: rgb(248, 248, 248);
+padding-top: 60px;
+z-index: 0;
+padding-left: 40px;
+padding-right: 40px;
+padding-bottom: 3px;
+padding-top: 83px;
+  border-bottom: 1px solid rgba(170, 165, 165, .5);
+
+}
+.title1{
+position: absolute;
+/* border-radius: 100% 100% 100% 100%; */
+margin-top: 7%;
+margin-left: 26%;
+letter-spacing: 1pt;
+text-align: left;
+z-index: 1000;
+background-color: rgba(248, 248, 248,0.5);
+padding: 7px;
+/* opacity: 0; */
+ display: none; 
+font-size: 12pt;
+width: 210px;
+border-bottom: 1px solid rgba(170, 165, 165, .5);
+
+}
+.title2{
+  border-bottom: 1px solid rgba(170, 165, 165, .5);
+
+position: absolute;
+/* border-radius: 100% 100% 100% 100%; */
+margin-top: 7%;
+margin-left: 52.5%;
+letter-spacing: 1pt;
+text-align: left;
+z-index: 1000;
+background-color: rgba(248, 248, 248,0.2);
+padding: 7px;
+/* opacity: 0; */
+ display: none; 
+font-size: 12pt;
+width: 211px;
+
+}
+#logo{
+  font-family: 'AkzidenzGrotesk-Light';
+  font-size: 8pt;
+  bottom: 10px;
+position: absolute;
+display: inline-block;
+/*margin: 15px 25px;*/
+outline: none;
+/*color: #fff;*/
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 400;
+text-shadow: 0 0 1px rgba(255,255,255,0.3);
+/*font-size: 1.35em;*/
+}
+
+/*a.five:link {color:#ff0000;text-decoration:none;}
+a.five:visited {color:#0000ff;text-decoration:none;}
+a.five:hover {text-decoration:underline;}*/
+/* Effect 1: Brackets */
+#logo a {
+text-decoration: none;
+  color: rgba(65, 63, 63, 1);
+
+}
+#logo:hover{
+  color:black;
+}
+
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52026122-1', 'spatialinformationdesignlab.org');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<center>
+  <div class = "intro">
+        <div class="introTitle"><p>The Library Project</p></div>
+        <p>Like many public libraries across the United States, university libraries are undergoing massive changes as their catalogues and parts of their collections have been digitized, and their physical collections have outgrown their physical space. Browsing the collection now often happens online. What are the possible ways we can browse the collection and learn about how networks of knowledge are created across the Columbia University community?</p>
+  </div>
+</center>
+<center>
+
+<div class="title1"><b>Catalog:</b><br> A visualization of the Columbia Library's holdings, circulation and activity</div>
+<div class="title2"><b>Crossing Disciplines:</b><br>A digital library tool for multidisciplinary exploration.</div>
+
+<a href="catalog.html"><img style="border:0;" src="derek.png" id="circle1" alt="Collection"></a>
+
+<a href="crossingDisciplines.html"><img style="border:0;" src="interdisc.png" id="circle2" alt="Interdisciplinary Browser"></a>
+
+
+
+
+</center>
+<div id ="logo"><a href="http://spatialinformationdesignlab.org">Spatial Information Design Lab </a>|<a href="http://library.columbia.edu/"> Columbia University Libraries</a>
+
+</div>
+</body>
+
+<script>
+
+$("#circle1").on("mouseover", function(){
+$(".title1").slideDown();
+})
+// $("#circle1").on("mouseout", function(){
+// $(".title1").slideUp();
+// })
+$("#circle2").on("mouseover", function(){
+$(".title2").slideDown();
+})
+// $("#circle2").on("mouseout", function(){
+// $(".title2").slideUp();
+// })
+
+</script>
+
+</html>
